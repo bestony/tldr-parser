@@ -10,9 +10,16 @@
     "tldr",
     "cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bestony/tldr-parser.git"
+  },
   "author": "Bestony",
   "license": "GPL-2.0",
   "devDependencies": {
     "mocha": "^5.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/bestony/tldr-parser/issues"
   }
 }
