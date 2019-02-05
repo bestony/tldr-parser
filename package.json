@@ -1,0 +1,15 @@
+{
+  "name": "tldr-parser",
+  "version": "1.0.0",
+  "description": "A tldr pages parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tldr",
+    "cli"
+  ],
+  "author": "Bestony",
+  "license": "GPL-2.0"
+}
