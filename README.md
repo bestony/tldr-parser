@@ -18,4 +18,27 @@ A tldr pages parser
         "command": "7z a {{encrypted.7z}} -p{{password}} -mhe {{archived.7z}}"
     }]
 }
-``
+```
+
+## Usage
+
+### Use as a Command line tool
+
+```
+npm install -g tldr-parser
+tldr-parser parse path_to_tldr_markdown_file path_to_export_file
+```
+
+
+### use as a Node Modules
+
+```bash
+npm install tldr-parser --save
+```
+
+```javascript
+const parser = require('tldr-parser')
+
+parser.parse('Content Of a TLDR File')
+```
+
