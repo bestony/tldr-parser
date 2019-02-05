@@ -8,6 +8,43 @@
     </p>
 </div>
 
+## Feature
+
+- Parse TLDR Pages into a Object (I call it  TLDR Object)
+- Cli Support
+- Node Module support
+
+
+## Usage
+
+### Use as a Command line tool
+
+Install TLDR Parser Global and use `tldr-parser` command 
+
+```
+npm install -g tldr-parser
+tldr-parser parse path_to_tldr_markdown_file path_to_export_file
+# tldr-parser dir path_to_osx_dir --platform=osx
+```
+
+
+
+### use as a Node Modules
+
+install tldr-parser
+
+```bash
+npm install tldr-parser --save
+```
+
+use it by require
+
+```javascript
+const parser = require('tldr-parser')
+
+parser.parse('Content Of a TLDR File')
+```
+
 
 ## TLDR Object
 
@@ -25,25 +62,7 @@
 }
 ```
 
-## Usage
 
-### Use as a Command line tool
+## LICENSE
 
-```
-npm install -g tldr-parser
-tldr-parser parse path_to_tldr_markdown_file path_to_export_file
-```
-
-
-### use as a Node Modules
-
-```bash
-npm install tldr-parser --save
-```
-
-```javascript
-const parser = require('tldr-parser')
-
-parser.parse('Content Of a TLDR File')
-```
-
+This Project is opensource under GPL-2.0
