@@ -4,12 +4,15 @@
   "description": "A tldr pages parser",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "tldr",
     "cli"
   ],
   "author": "Bestony",
-  "license": "GPL-2.0"
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
 }
