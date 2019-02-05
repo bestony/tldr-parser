@@ -1,10 +1,13 @@
 {
   "name": "tldr-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tldr pages parser",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
+  },
+  "bin": {
+    "tldr-parser": "./bin/cli.js"
   },
   "keywords": [
     "tldr",
@@ -21,5 +24,8 @@
   },
   "bugs": {
     "url": "https://github.com/bestony/tldr-parser/issues"
+  },
+  "dependencies": {
+    "commander": "^2.19.0"
   }
 }
