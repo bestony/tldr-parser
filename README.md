@@ -4,7 +4,7 @@
 	    <br>
         <h1>tldr-parser</h1>
         <h2>A tldr pages parser</h2>
-        <p> <img src="https://img.shields.io/travis/com/bestony/tldr-parser.svg?style=popout-square"> <img src="https://img.shields.io/appveyor/ci/bestony/tldr-parser.svg?style=popout-square">
+        <p> <img src="https://img.shields.io/travis/com/bestony/tldr-parser.svg?style=popout-square"> 
     </p>
 </div>
 
@@ -23,9 +23,21 @@ Install TLDR Parser Global and use `tldr-parser` command
 
 ```
 npm install -g tldr-parser
-tldr-parser parse path_to_tldr_markdown_file path_to_export_file
-# tldr-parser dir path_to_osx_dir --platform=osx
 ```
+
+#### Parse single file
+
+```
+tldr-parser parse path_to_tldr_markdown_file path_to_export_file
+```
+
+#### Parse directory's File
+
+```
+tldr-parser dir path_to_directory --platform=linux
+```
+
+> the option `platform` is the tldr command directory ,while you set this options , the TLDR Object will have a prop `platform`
 
 
 
@@ -51,6 +63,7 @@ parser.parse('Content Of a TLDR File')
 ```json
 {
     "name": "7z",
+    "platform":"common",
     "description": ["A file archiver with high compression ratio.", "Homepage: <https://www.7-zip.org/>."],
     "examples": [{
         "description": "Archive a file or folder",
