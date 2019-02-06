@@ -1,5 +1,4 @@
-const fs = require('fs');
 const path = require('path');
-const parser = require(path.join(__dirname, "lib/parser.js"))
+const parser = require(path.join(__dirname, 'lib/parser.js'));
 
-module.exports = parser
+module.exports = parser;
