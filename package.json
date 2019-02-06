@@ -4,7 +4,8 @@
   "description": "A tldr pages parser",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint ."
   },
   "bin": {
     "tldr-parser": "./bin/cli.js"
@@ -20,6 +21,9 @@
   "author": "Bestony",
   "license": "GPL-2.0",
   "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-google": "^0.12.0",
+    "husky": "^1.3.1",
     "mocha": "^5.2.0"
   },
   "bugs": {
