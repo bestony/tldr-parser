@@ -1,6 +1,6 @@
 {
   "name": "tldr-parser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A tldr pages parser",
   "main": "index.js",
   "scripts": {
